@@ -1,0 +1,232 @@
+body {
+    background-color: #333333;
+    background-image: url(tlo.png);
+    background-size: cover;
+    font-family: 'Helvetica', Arial, sans-serif;
+
+}
+/* kontener */
+.wszystko
+{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+/* Przyciski wybor (proponowane miejsca)*/
+
+.wybor {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Przyciski będą na tej samej wysokości */
+    margin-top: 20px; /* Dodano odstęp od góry, możesz dostosować według potrzeb */
+
+}
+
+
+.wybor button {
+    padding: 10px 20px; /* Dostosuj wartości do uzyskania pożądanego odstępu wewnątrz przycisków */
+    margin: 0 60px;
+    height: 150px;
+    width: 200px;
+    border-radius: 30px;
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.wybor button:active {
+    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
+}
+
+.wybor button:hover {
+    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
+
+}
+
+
+/* "Kiedy planujesz wejscie" text  */
+
+#text1
+{
+    padding-top: 25px;
+    color: white;
+    -webkit-text-stroke: 1px #020202;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+/* "Jak chciałbys spędzić wieczór" text  */
+.tekstLaczony1 {
+    margin: auto;
+    width: 50%;
+    height: 8.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#text2,
+#text3 {
+    position: absolute;
+}
+
+#text2{
+    padding-top: 25px;
+    color: white;
+    -webkit-text-stroke: 1px #020202;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#text3 {
+    left:11%;
+    padding-top: 90px;
+    color: grey;
+    font-size: 20px;
+}
+
+
+
+/* PRZYCISKI PROPONOWANE */
+.przyciskiProponowane {
+    display: flex;
+    flex-wrap:wrap;
+    max-width: 800px;
+
+    justify-content: center;
+    margin: 1vw 1vw 1vw 29vw;
+}
+
+.przyciskiProponowane button {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-weight: normal;
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 40px;
+    font-family: 'Helvetica', Arial, sans-serif;
+    margin: 5px;
+}
+
+.przyciskiProponowane button:active {
+    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
+}
+
+.przyciskiProponowane button:hover {
+    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
+
+}
+
+/* INPUT BAR*/
+.searchBar {
+    display: flex;
+    margin: 1vw 1vw 1vw 30vw;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 800px;
+
+
+}
+
+label {
+    padding: 10px;
+    background-color: white;
+    color: white;
+}
+
+input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    outline: none;
+    font-size: 20px;
+}
+
+
+/* Przyciski na dole strony (cofnij/dalej) */
+
+.przyciski {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Przyciski będą na tej samej wysokości */
+    margin-top: 20px; /* Dodano odstęp od góry, możesz dostosować według potrzeb */
+
+}
+
+#przycisk1 button, #przycisk2 button {
+    background-color: #D9D9D9;
+    color: #292929;
+    font-weight: normal;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 40px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+#przycisk1 {
+    left:0;
+    bottom: 0;
+}
+
+#przycisk2 {
+    right:0;
+    bottom: 0;
+}
+
+/* "Inne propozycje" text  */
+.tekstLaczony2 {
+    margin: auto;
+    width: 50%;
+    height: 7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#text4,
+#text5 {
+    position: absolute;
+}
+
+#text4{
+    padding-top: 25px;
+    color: white;
+    -webkit-text-stroke: 1px #020202;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#text5 {
+    left:28.5%;
+    padding-top: 110px;
+    color: grey;
+    font-size: 20px;
+}
