@@ -5,7 +5,7 @@ Repozytorium na potrzeby przedmiotu Inżynierski Projekt Zespołowy na uczelni Z
 
 
 
-## Authors
+## Autorzy
 
 - [@oliwermazur](https://github.com/oliwermazur)
 - [@Claudeeeeee](https://github.com/Claudeeeeee)
