@@ -57,7 +57,7 @@ p {
 }
 
 
-.przyciskiJedzenie,przyciskiBaryPuby,przyciskiEventy,przyciskiKluby {
+przyciskiJedzenie,przyciskiBaryPuby,przyciskiEventy,przyciskiKluby {
     display: flex;
     flex-wrap:wrap;
     max-width: 800px;
