@@ -1,6 +1,6 @@
 body {
     background-color: #333333;
-    background-image: url(tlo.png);
+    background-image: url(../img/tlo.png);
     background-size: cover;
     font-family: 'Helvetica', Arial, sans-serif;
 
@@ -41,47 +41,47 @@ body {
 
 /* Date bar  */
 .fa-calendar {
-       padding-top: 14px;
-       padding-left: 14px;
+    padding-top: 14px;
+    padding-left: 14px;
 
-       color: #333;
-       background-color: white;
-   }
-   .searchBar {
-       display: flex;
-       margin: 1vw 1vw 1vw 30vw;
-       border: 2px solid #ccc;
-       border-radius: 30px;
-       overflow: hidden;
-       width: 800px;
+    color: #333;
+    background-color: white;
+}
+.searchBar {
+    display: flex;
+    margin: 1vw 1vw 1vw 30vw;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 800px;
 
 
-   }
+}
 
-   label {
-       padding: 10px;
-       background-color: white;
-       color: white;
-   }
+label {
+    padding: 10px;
+    background-color: white;
+    color: white;
+}
 
-   input[type="text"] {
-       flex: 1;
-       border: none;
-       padding: 15px;
-       border-bottom-left-radius: 0;
-       border-top-left-radius: 0;
-       outline: none;
-       font-size: 20px;
-   }
+input[type="text"] {
+    flex: 1;
+    border: none;
+    padding: 15px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    outline: none;
+    font-size: 20px;
+}
 
 
 /* "Pora dnia" text */
 #text2
 {
+    padding-top: 25px;
     color: white;
-    margin: 1vw 1vw 0 42vw;
     -webkit-text-stroke: 1px #020202;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -159,5 +159,42 @@ body {
 #przycisk2 {
     right:0;
     bottom: 0;
+}
+/* Responsive Styles with Media Queries */
+@media only screen and (max-width: 768px) {
+    body {
+        /* Example: Adjust font size or layout for smaller screens */
+    }
+    .searchBar {
+        /* Example: Adjust the width or spacing of the search bar */
+        margin: 1vw 5% 1vw 5%;
+        width: 90%;
+    }
+    .wybor button {
+        /* Example: Adjust the size or spacing of the buttons */
+    }
+}
+
+/* Fluid Layout */
+.searchBar {
+    /* Example: Use percentage for margins */
+    margin: 1vw 5% 1vw 5%;
+    /* Example: Use percentage for width */
+    width: 90%;
+}
+
+/* Images */
+img {
+    /* Example: Make images responsive */
+    max-width: 100%;
+    height: auto;
+}
+
+/* Flexbox and Grid */
+.wybor {
+    /* Example: Allow buttons to wrap on smaller screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 

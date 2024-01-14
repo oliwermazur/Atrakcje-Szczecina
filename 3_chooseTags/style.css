@@ -1,34 +1,30 @@
+/* Global Styles */
 body {
     background-color: #333333;
-    background-image: url(tlo.png);
+    background-image: url(../img/tlo.png);
     background-size: cover;
     font-family: 'Helvetica', Arial, sans-serif;
-
 }
-/* kontener */
-.wszystko
-{
+
+/* Container Styles */
+.wszystko {
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: 0 auto;
-
 }
 
-/* Przyciski wybor (proponowane miejsca)*/
-
+/* Choice Buttons (proposed places) */
 .wybor {
     display: flex;
     justify-content: center;
-    align-items: center; /* Przyciski będą na tej samej wysokości */
-    margin-top: 20px; /* Dodano odstęp od góry, możesz dostosować według potrzeb */
-
+    align-items: center;
+    margin-top: 20px;
 }
 
-
 .wybor button {
-    padding: 10px 20px; /* Dostosuj wartości do uzyskania pożądanego odstępu wewnątrz przycisków */
-    margin: 0 60px;
+    padding: 10px 20px;
+    margin: 0 10px; /* Adjusted margin for responsiveness */
     height: 150px;
     width: 200px;
     border-radius: 30px;
@@ -43,32 +39,24 @@ body {
     align-items: center;
 }
 
-.wybor button:active {
-    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
-}
-
+.wybor button:active,
 .wybor button:hover {
-    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
-
+    border-color: #FFC107;
 }
 
-
-/* "Kiedy planujesz wejscie" text  */
-
-#text1
-{
+/* "When do you plan to go out" text */
+#text1 {
     padding-top: 25px;
     color: white;
     -webkit-text-stroke: 1px #020202;
     font-size: 50px;
     font-weight: bold;
-
 }
 
-/* "Jak chciałbys spędzić wieczór" text  */
+/* Combined Text 1 "How would you like to spend the evening" */
 .tekstLaczony1 {
     margin: auto;
-    width: 50%;
+    width: 80%; /* Adjusted width for responsiveness */
     height: 8.5vw;
     display: flex;
     justify-content: center;
@@ -76,12 +64,11 @@ body {
     position: relative;
 }
 
-#text2,
-#text3 {
+#text2 {
     position: absolute;
 }
 
-#text2{
+#text2 {
     padding-top: 25px;
     color: white;
     -webkit-text-stroke: 1px #020202;
@@ -90,23 +77,15 @@ body {
     text-align: center;
 }
 
-#text3 {
-    left:11%;
-    padding-top: 90px;
-    color: grey;
-    font-size: 20px;
-}
 
 
-
-/* PRZYCISKI PROPONOWANE */
+/* Proposed Buttons */
 .przyciskiProponowane {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     max-width: 800px;
-
     justify-content: center;
-    margin: 1vw 1vw 1vw 29vw;
+    margin: 0 auto;
 }
 
 .przyciskiProponowane button {
@@ -125,25 +104,19 @@ body {
     margin: 5px;
 }
 
-.przyciskiProponowane button:active {
-    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
-}
-
+.przyciskiProponowane button:active,
 .przyciskiProponowane button:hover {
-    border-color: #FFC107; /* Kolor obramowania po kliknięciu */
-
+    border-color: #FFC107;
 }
 
-/* INPUT BAR*/
+/* Input Bar */
 .searchBar {
     display: flex;
-    margin: 1vw 1vw 1vw 30vw;
+    margin: 1vw 1vw 1vw 10vw; /* Adjusted margin for responsiveness */
     border: 2px solid #ccc;
     border-radius: 30px;
     overflow: hidden;
-    width: 800px;
-
-
+    width: 80%; /* Adjusted width for responsiveness */
 }
 
 label {
@@ -162,18 +135,16 @@ input[type="text"] {
     font-size: 20px;
 }
 
-
-/* Przyciski na dole strony (cofnij/dalej) */
-
+/* Bottom Buttons (back/next) */
 .przyciski {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Przyciski będą na tej samej wysokości */
-    margin-top: 20px; /* Dodano odstęp od góry, możesz dostosować według potrzeb */
-
+    align-items: center;
+    margin-top: 20px;
 }
 
-#przycisk1 button, #przycisk2 button {
+#przycisk1 button,
+#przycisk2 button {
     background-color: #D9D9D9;
     color: #292929;
     font-weight: normal;
@@ -186,23 +157,22 @@ input[type="text"] {
     transition: background-color 0.3s;
     width: 150px;
     height: 40px;
-    font-family: 'Helvetica', Arial, sans-serif;
 }
 
 #przycisk1 {
-    left:0;
+    left: 0;
     bottom: 0;
 }
 
 #przycisk2 {
-    right:0;
+    right: 0;
     bottom: 0;
 }
 
-/* "Inne propozycje" text  */
+/* Combined Text 2 "Other proposals" */
 .tekstLaczony2 {
     margin: auto;
-    width: 50%;
+    width: 80%; /* Adjusted width for responsiveness */
     height: 7vw;
     display: flex;
     justify-content: center;
@@ -215,7 +185,7 @@ input[type="text"] {
     position: absolute;
 }
 
-#text4{
+#text4 {
     padding-top: 25px;
     color: white;
     -webkit-text-stroke: 1px #020202;
@@ -224,9 +194,59 @@ input[type="text"] {
     text-align: center;
 }
 
-#text5 {
-    left:28.5%;
-    padding-top: 110px;
-    color: grey;
-    font-size: 20px;
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .wybor {
+        flex-direction: column; /* Adjusted direction for smaller screens */
+        align-items: center;
+    }
+    .wybor button {
+        margin: 10px 0; /* Adjusted margin for responsiveness */
+    }
+    .tekstLaczony1,
+    .przyciskiProponowane,
+    .searchBar,
+    .przyciski,
+    .tekstLaczony2 {
+        width: 100%; /* Adjusted width for responsiveness */
+    }
+    #text2,
+    #text3,
+    #text4,
+    #text5 {
+        font-size: 30px; /* Adjusted font size for responsiveness */
+    }
+    .przyciskiProponowane button {
+        margin: 5px;
+    }
+    #text2 {
+        position: relative;
+        font-size: 24px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    #text4 {
+        position: relative;
+        font-size: 24px;
+        padding-top: 10px;
+        text-align: center;
+    }
+    #text1 {
+        padding-top: 0;
+        position: relative;
+        font-size: 32px;
+        text-align: center;
+    }
+
+
+    .przyciskiProponowane,
+    .searchBar {
+        margin: 10px 0; /* Adjusted margin for responsiveness */
+    }
+    .przyciskiProponowane button,
+    .searchBar input[type="text"] {
+        width: 100%; /* Adjusted width for responsiveness */
+    }
 }

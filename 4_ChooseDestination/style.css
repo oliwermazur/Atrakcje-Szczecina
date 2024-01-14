@@ -2,7 +2,7 @@
 
 body {
     background-color: #333333;
-    background-image: url(tlo.png);
+    background-image: url(../img/tlo.png);
     background-size: cover;
     font-family: 'Helvetica', Arial, sans-serif;
 
@@ -16,8 +16,7 @@ body {
 }
 /* "Plan dnia" text  */
 .tekstLaczony1 {
-    margin: auto;
-    width: 50%;
+    margin: 0 auto;
     height: 8.5vw;
     display: flex;
     justify-content: center;
@@ -39,13 +38,7 @@ body {
     text-align: center;
 }
 
-#text2 {
-    left:37%;
-    padding-top: 90px;
-    color: grey;
-    font-size: 20px;
-    opacity: 0.3;
-}
+
 
 p {
     text-align: left;
@@ -127,4 +120,69 @@ przyciskiJedzenie,przyciskiBaryPuby,przyciskiEventy,przyciskiKluby {
 
 .przyciskiJedzenie button:hover, .przyciskiBaryPuby button:hover, .przyciskiEventy button:hover,.przyciskiKluby button:hover {
     border-color: #FFC107; /* Kolor obramowania po kliknięciu */
+}
+@media only screen and (max-width: 768px) {
+    .wszystko {
+        width: 100%;
+        padding: 0 10px; /* Add horizontal padding */
+    }
+
+    .tekstLaczony1 {
+        width: 100%;
+        font-weight: bold;
+        height: auto;
+    }
+
+    #text1,
+    #text2 {
+        position: static;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    #text1 {
+        font-size: 30px;
+    }
+
+    #text2 {
+        font-size: 18px;
+        left: 0;
+        opacity: 1;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .przyciskiJedzenie,
+    .przyciskiBaryPuby,
+    .przyciskiEventy,
+    .przyciskiKluby {
+        justify-content: center;
+    }
+
+    .przyciskiJedzenie button,
+    .przyciskiBaryPuby button,
+    .przyciskiEventy button,
+    .przyciskiKluby button {
+        width: calc(100% - 20px); /* Adjust width to account for padding */
+        margin: 5px auto;
+    }
+
+    .przyciski {
+        padding-top: 5vh;
+        flex-direction: column;
+    }
+
+    #przycisk1 button,
+    #przycisk2 button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #przycisk1, #przycisk2 {
+        width: 100%;
+        text-align: center;
+    }
 }
